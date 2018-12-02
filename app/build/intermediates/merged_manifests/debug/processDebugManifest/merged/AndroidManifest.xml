@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.diogo.appreceitas"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="27" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.diogo.appreceitas.MainActivity"
+            android:label="Receitas" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.diogo.appreceitas.ReceitasSalgadosActivity"
+            android:label="Salgados" >
+            <meta-data
+                android:name="android.support.PARENT.ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.diogo.appreceitas.ReceitasDocesActivity"
+            android:label="Doces" >
+            <meta-data
+                android:name="android.support.PARENT.ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.diogo.appreceitas.ReceitasBolosActivity"
+            android:label="Bolos" >
+            <meta-data
+                android:name="android.support.PARENT.ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.diogo.appreceitas.ReceitasActivity"
+            android:label="Receita" />
+    </application>
+
+</manifest>
